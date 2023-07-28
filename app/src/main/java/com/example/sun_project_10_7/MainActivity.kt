@@ -2,12 +2,12 @@ package com.example.sun_project_10_7
 
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
-import com.example.sun_project_10_7.R
 import com.example.sun_project_10_7.databinding.ActivityMainBinding
 import java.text.NumberFormat
 
@@ -24,6 +24,10 @@ class MainActivity : AppCompatActivity() {
         binding.calculateButton.setOnClickListener { calculateTip() }
         binding.costOfService.setOnKeyListener { view, keyCode, _ ->
             handleKeyEvent(view, keyCode)
+        }
+        binding.nextPageSecondActivity.setOnClickListener{
+            val intent = Intent(this, SecondActivity::class.java)
+            startActivity(intent)
         }
     }
 

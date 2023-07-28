@@ -124,5 +124,13 @@
             android:text="@string/tip_amount"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/calculate_button" />
+        <Button
+            android:id="@+id/next_page_second_activity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="push second activity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/calculate_button" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
