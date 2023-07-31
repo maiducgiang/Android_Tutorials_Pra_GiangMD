@@ -26,6 +26,7 @@
         <activity
             android:name=".SecondActivity"
             android:exported="false" >
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -40,6 +41,7 @@
                 <action android:name="android.intent.action.SEND" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <data android:mimeType="text/plain"/>
             </intent-filter>
 
             <meta-data

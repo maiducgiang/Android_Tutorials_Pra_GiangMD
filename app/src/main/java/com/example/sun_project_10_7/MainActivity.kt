@@ -44,6 +44,15 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ThreeActivity::class.java)
             startActivity(intent)
         }
+        var intent: Intent = Intent(Intent.ACTION_SEND)
+        binding.intentFilterSend.setOnClickListener{
+
+            intent.type = "text/plain"
+            intent.putExtra(Intent.EXTRA_EMAIL, "maiducgiang@gmail.com")
+            intent.putExtra(Intent.EXTRA_SUBJECT, "send data")
+
+            startActivity(Intent.createChooser(intent,"chon email"))
+        }
     }
 
     private fun calculateTip() {
