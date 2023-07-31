@@ -40,6 +40,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
         }
+        binding.nextPageCallApi.setOnClickListener{
+            val intent = Intent(this, ThreeActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun calculateTip() {

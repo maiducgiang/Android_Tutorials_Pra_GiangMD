@@ -29,4 +29,5 @@
     <string name="affirmation10">I will be present in all the moments that this day brings.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_three">three</string>
 </resources>
