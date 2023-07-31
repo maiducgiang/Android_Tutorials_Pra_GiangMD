@@ -8,15 +8,26 @@ import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
+import com.example.sun_project_10_7.coroutine.CoroutineFun
 import com.example.sun_project_10_7.databinding.ActivityMainBinding
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import java.text.NumberFormat
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    fun coroutineFunction(){
+        val coroutineFun: CoroutineFun = CoroutineFun()
+        coroutineFun.demo()
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        coroutineFunction()
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
