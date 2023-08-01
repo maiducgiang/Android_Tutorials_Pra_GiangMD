@@ -15,7 +15,15 @@
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/pop_up" />
-
+        <activity
+            android:name=".ThreeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_three"
+            android:theme="@style/Theme.Sun_project.NoActionBar" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
