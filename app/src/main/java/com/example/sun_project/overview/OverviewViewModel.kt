@@ -20,6 +20,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.sun_project.network.MarsApi
 import kotlinx.coroutines.launch
 
 /**
@@ -45,13 +46,13 @@ class OverviewViewModel : ViewModel() {
      */
     private fun getMarsPhotos() {
         viewModelScope.launch {
-            _status.value = "Success: giang Mars photos retrieved"
-//            try {
-//                val listResult = MarsApi.retrofitService.getPhotos()
-//                _status.value = "Success: ${listResult.size} Mars photos retrieved"
-//            }catch (e: java.lang.Exception){
-//                _status.value = "Failure: ${e.message}"
-//            }
+
+            try {
+                val listResult = MarsApi.retrofitService.getPhotos()
+                _status.value = "Success: ${listResult.size} Mars photos retrieved"
+            }catch (e: java.lang.Exception){
+                _status.value = "Failure: ${e.message}"
+            }
 
         }
     }
