@@ -148,5 +148,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/next_page_call_api" />
+        <Button
+            android:id="@+id/dialog_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="show dialog picker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/intent_filter_send" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
