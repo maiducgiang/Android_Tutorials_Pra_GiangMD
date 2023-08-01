@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sun_project"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/pop_up" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -22,7 +26,8 @@
                 <action android:name="android.intent.action.SEND" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-                <data android:mimeType="text/plain"/>
+
+                <data android:mimeType="text/plain" />
             </intent-filter>
 
             <meta-data
