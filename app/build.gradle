@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace 'com.example.demo'
-    compileSdk 32
+    namespace 'com.example.sun_project'
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.demo"
+        applicationId "com.example.sun_project"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -32,6 +32,7 @@ android {
     }
     buildFeatures {
         viewBinding true
+        dataBinding true
     }
 }
 
@@ -46,4 +47,6 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
 }
+
