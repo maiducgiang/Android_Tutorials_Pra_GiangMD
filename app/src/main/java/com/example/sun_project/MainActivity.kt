@@ -40,6 +40,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, IntentActivity::class.java)
             startActivity(intent)
         }
+        binding.buttonPushToExFragment.setOnClickListener {
+            val intent = Intent(this, ExFragmentActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 

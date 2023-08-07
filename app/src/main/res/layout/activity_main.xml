@@ -148,5 +148,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/next_page_call_api" />
+        <Button
+            android:id="@+id/button_push_to_ex_fragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="action push Ex Fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/intent_filter_send" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
