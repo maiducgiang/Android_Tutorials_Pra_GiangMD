@@ -40,6 +40,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, IntentActivity::class.java)
             startActivity(intent)
         }
+        binding.fragmentsEx.setOnClickListener {
+            val intent = Intent(this, FragmentExActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 
