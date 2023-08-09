@@ -145,6 +145,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/action_send_by_intent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/next_page_call_api" />
+        <Button
+            android:id="@+id/fragments_ex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ex_fragments"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/next_page_call_api" />
